@@ -157,6 +157,81 @@ def esm(q, w, e):
 c = esm ('arian ' + 'dastranj     ' , 'ali ' + 'dastranj      ' , 'farhad ' + 'dastranj '   )
 print (c)     # جواب : arian dastranj     ali dastranj      farhad dastranj
 
+#-----------------------------------
+
+def name (n = 'arian', j = 'dastranj'):
+    if n == 'neda' and  j == 'jenab':
+        return 'your name is True'
+    else:
+        return 'your name is False'
+name('neda')       #  'your name is False' : جواب 
+
+#------------------------------------
+
+def adad(a, b):
+    if a * b > 100 :
+        return 'Your number is greater than one hundred'
+    else:
+        return 'Your number is less than one hundred'
+adad (9, 3)        # 'Your number is less than one hundred' : جواب 
+
+#-------------------------------------
+
+def arian (s, d):
+    if s == 13 and d == 5 :
+        return s * d
+    else :
+        return s // d
+arian (13, 3)     # جواب : 4
+
+#--------------------------------------
+
+def esm (f, g) :
+    if f == 'neda ' and g == 'jenab':
+        return f + g
+    else:
+        return False
+esm ('neda ', 'jenab' )     # 'neda jenab' : جواب 
+
+#---------------------------------------
+
+def adad (a, s, d):
+    if a == 34 and s == 3 and d == 4 :
+        return a * s + d
+        print ('True')
+    else :
+        return a * s // d
+        print ('False')
+adad (34, 3, 5)           # جواب : 20
+
+#----------------------------------------
+
+def riyazi (m, a, n) :
+    if m < 44 and a > 12 and n == 8:
+        return m * a + n
+    else :
+        return m // a - n
+riyazi (43, 13, 10)       # جواب : -7
+
+#-----------------------------------------
+
+def arian_code (a = 'ali ', b = 'dastranj', c = 'dooset darm') :
+    if a == 'neda ' and b == 'jenab ' and c == 'dooset darm':
+        return a + b + c
+    else :
+        return 'arian ' + 'dastranj ' + 'dooset darm'
+arian_code ('ned ', 'jenab ', 'dooset darm')       # arian dastraj dooset darm : جواب 
+
+#------------------------------------------
+
+def adad (a, m, s, d, g, t) :
+    if a == 44 and m == 13 and s == 38 and d == 46 and g == 33 and t == 80 :
+        return a * m * s * d * g * t
+    else :
+        return a + m + s + d + g + t
+        print ('adad shoma nadorost ast')
+arian = adad (44, 13, 38, 46, 33, 80) 
+print (arian)           # جواب : 2639619840
 
 #------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------
@@ -181,29 +256,59 @@ def bakhshpaziri(n):
 x = bakhshpaziri (24)
 print (x)          # جواب : [1, 2, 3, 4, 6, 8, 12, 24]
 
+#---------------------------------------
 
+def adad_avval(s):
+    lst = []
+    for m in range(2, s + 1):
+        c = 0
+        for i in range (1, m+1):
+            if m % i == 0 :
+                c = c + 1
+        if c == 2 :
+            lst.append(i)
+    return lst
+adad_avval(13)    # جواب : [2, 3, 5, 7, 11, 13]
 
+#-----------------------------------------
 
+def avval(num):
+    c = 0
+    for i in range(1, num + 1):
+        if num % i == 0:
+            c = c + 1     
+    if c == 2:
+        return True
+    else:
+        return False          
+x = avval(103)     
+print(x)                    #  True : جواب
+ 
+#------------------------------------------
 
+def my_function (x) :
+    return x [::-1]
+n = my_function ('amir')
+print (n)       #rima : جواب
 
+#--------------------------------------------
 
+def fibonacci (x) :
+    a, b = 0, 1
+    while a < x :
+        print (a, end=' ')
+        a, b = b, a + b
+fibonacci (10)       # جواب : 0 1 1 2 3 5 8
 
+#---------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def rev_name (x) :
+    a = ''
+    for i in x :
+        a = i + a
+    return a
+d = rev_name ('amir')
+print (d)
 
 
 
